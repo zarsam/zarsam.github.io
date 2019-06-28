@@ -1,52 +1,318 @@
 <!DOCTYPE html>
-<html>
-<head><title></title>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<script type="text/javascript" src="base64.js"></script>
-<script type="text/javascript">
-<!--
-// This will generate the text file content based on the form data
-function buildData(){
-    var txtData = "Name: "+$("#nameField").val()+
-            "\r\nLast Name: "+$("#lastNameField").val()+
-            "\r\nGender: "+($("#genderMale").is(":checked")?"Male":"Female");
+<!--[if IE 9 ]>    <html lang="ru" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="ru" class="no-js">
+<!--<![endif]--><!-- head
+    ============================================================================ --><head>
 
-    return txtData;
+
+        <!-- Basic Info
+        ======================================================================== -->
+        <title></title>
+        <meta charset="utf-8">
+        <meta name="author" content="www.lazukin.net">
+        <meta name="robots" content="index, follow">
+        <meta name="googlebot" content="index, follow">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+
+        <!-- Mobile Configurations
+        ======================================================================== -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+        <!-- fav and icons for Mobile
+        ======================================================================== -->
+        <link rel="shortcut icon" href="images/icons/favicon.ico">
+        <link rel="apple-touch-icon" sizes="57x57" href="//lpbuilder.pro/images/icons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="//lpbuilder.pro/images/icons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="//lpbuilder.pro/images/icons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="//lpbuilder.pro/images/icons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="//lpbuilder.pro/images/icons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="//lpbuilder.pro/images/icons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="//lpbuilder.pro/images/icons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="//lpbuilder.pro/images/icons/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="//lpbuilder.pro/images/icons/apple-touch-icon-180x180.png">
+
+        <!-- Google Fonts
+        ======================================================================== -->
+        <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600|Roboto:100,100i,300,300i,400,400i,500,700&amp;subset=cyrillic" rel="stylesheet"> -->
+
+        <!--  CSS Files
+        ======================================================================== -->
+        <link rel="stylesheet" href="js/vendor/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/social-icons.css">
+        <link rel="stylesheet" href="js/plugins/swiper/css/swiper.min.css">
+        <link rel="stylesheet" href="js/plugins/mediaelement/css/mediaelementplayer.min.css">
+        <link rel="stylesheet" href="js/plugins/fancybox/jquery.fancybox.min.css">
+        <link rel="stylesheet" href="js/plugins/wow/css/animate.min.css">
+        <link rel="stylesheet" href="css/style.css">
+		<link id="changeable-colors" rel="stylesheet" href="css/css/red.css">
+        <link rel="stylesheet" href="css/responsive.css">
+
+        <!--  Head JS Libs
+        ======================================================================== -->
+        <script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/watch.js?v=1.1.2"></script><script src="js/vendor/modernizr-custom.js"></script>
+
+
+    </head><!-- /End head -->
+
+
+
+
+    <!-- body
+    ============================================================================ -->
+    <body class="nbs-10" data-spy="scroll" data-target=".header-menu-container" data-offset="61">
+
+
+
+
+        <!-- UP Button
+        ======================================================================== -->
+        <div id="up-button"><a href="#" title="To Top"><i class="fa fa-angle-up"></i></a></div>
+
+
+
+
+        <!-- Main Wrapper
+        ======================================================================== -->
+        <div id="main-wrapper">
+		
+        <!-- Header 1
+            ==================================================================== -->
+            <!-- /End Header 1 --><!-- Hero 1
+            ==================================================================== -->
+            <!-- /End Hero 1 --><!-- Counters 3
+            ==================================================================== -->
+            <!-- /End Counters 3 --><!-- Hero 2
+            ==================================================================== -->
+            <div id="hero-section-2" class="hero-section white-section section-lg-padding">
+                <!-- Section Container -->
+                <div class="section-container">
+
+
+                    <!-- Background Image Block -->
+                    <div class="background-image-block parallax-effect lpbuilder-background">
+                        <img src="images/hero/hero-002.jpg" alt="Parallax Background Image" style="top: -175px; transform: translate(-50%, 0px);">
+                    </div><!-- /End Background Image Block -->
+
+
+                    <!-- container -->
+                    <div class="container">
+                        <!-- row -->
+                        <div class="row">
+
+
+                            <!-- Title Block -->
+                            <div class="col-lg-10 col-lg-offset-1 col-md-12 title-block">
+                                <!-- Title Block Container -->
+                                <div class="title-block-container white-content text-center">
+
+                                    <!-- Title -->
+                                    <h1>КОНСТРУКТОР LPB</h1>
+
+                                    <!-- Description -->
+                                    <p>Самый мощный конструктор посадочных страниц</p>
+
+                                </div><!-- /End Title Block Container -->
+                            </div><!-- /End Title Block -->
+
+
+                            <!-- Subscribe Form Block -->
+                            <div class="col-lg-8 col-lg-offset-2 col-md-12 form-block subscribe-form-block">
+                                <!-- Form Block Container -->
+                                <div class="form-block-container white-content text-center">
+                                    <form method="post" action="#">
+
+                                        <!-- Email -->
+                                        <div class="col-md-8">
+                                            <div class="form-group">
+                                                <input type="email" class="form-control subscribe-email" name="EMAIL">
+                                                <label>Email address</label>
+                                            </div>
+                                        </div><!-- /End Email -->
+
+                                        <!-- Submit Button -->
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <button type="submit" class="btn btn-lpbuilder wave-effect">ПОДПИСАТЬСЯ</button>
+                                            </div>
+                                        </div><!-- /End Submit Button -->
+
+                                    </form>
+                                </div><!-- /End Form Block Container-->
+                            </div><!-- /End Subscribe Form Block -->
+
+
+                        </div><!-- /End row -->
+                    </div><!-- /End container -->
+
+
+                </div><!-- /End Section Container -->
+            </div><!-- /End Hero 2 --></div><!-- /End Main Wrapper -->
+
+
+
+
+        <!-- Java Script Files		
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>		
+        ======================================================================== -->
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/plugins/mobile/mobile.min.js"></script>
+        <script type="text/javascript" src="js/scripts.js"></script>
+		<script type="text/javascript" src="//lpbuilder.pro/js/app.js"></script><div class="notification-block notification-block-bottom-right notification-block-style-10"><div class="notification-block-container"><iframe src="https://lpbuilder.pro/yandex_rtb.html" width="100%" height="360"></iframe><a href="#" title="Close" class="close-notification"><i class="fa fa-times"></i></a></div></div>
+        <div style="display: none;">при поддержки <a title="Евгений Лазукин - индивидуальная разработка лендингов и сайтов" href="https://www.lazukin.net"> Евгений Лазукин - индивидуальная разработка лендингов и сайтов </a> / <a title="Сайт создан в бесплатном онлайн конструкторе Landing Page - LPBuilder.pro" href="https://lpbuilder.pro/">Сайт создан в бесплатном онлайн конструкторе Landing Page - LPBuilder.pro</a></div>
+
+<style>		
+#style-switcher {
+    z-index: 9999;
+    position: fixed;
+    top: 100px;
+    width: 212px;
+    height: auto;
+    /*min-height: 200px;*/
+    border: 1px solid #f1f1f1;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-align: left;
+    background: white;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
 }
-// This will be executed when the document is ready
-$(function(){
-    // This will act when the submit BUTTON is clicked
-    $("#formToSave").submit(function(event){
-        event.preventDefault();
-        var txtData = buildData();
-        window.location.href="data:application/octet-stream;base64,"+Base64.encode(txtData);
-    });
 
-    // This will act when the submit LINK is clicked
-    $("#submitLink").click(function(event){
-        var txtData = buildData();
-        $(this).attr('download','sugguestedName.txt')
-            .attr('href',"data:application/octet-stream;base64,"+Base64.encode(txtData));
-    });
+.close-style-switcher {
+    left: -212px;
+}
+
+.open-style-switcher {
+    left: -1px;
+}
+
+#style-switcher .segment {
+    width: 100%;
+    padding: 15px 10px 15px 0;
+    padding: 15px 25px;
+
+}
+
+#style-switcher a.panel-button {
+    position: absolute;
+    top: 30px;
+    right: -50px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #f1f1f1;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-align: center;
+    font-size: 23px;
+    line-height: 47px;
+    background: white;
+    cursor: pointer;
+}
+
+#style-switcher h3 {
+    margin: 0;
+}
+
+#style-switcher .segment a.switcher {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-top: 5px;
+    margin-right: 3px;
+    border: 1px solid #efefef;
+    cursor: pointer;
+}
+
+.red-bg {
+    background: #EF4035;
+}
+
+.orange-bg {
+    background: #F26F21;
+}
+
+.yellow-bg {
+    background: #FFC153;
+}
+
+.green-bg {
+    background: #5CB85C;
+}
+
+.turquoise-bg {
+    background: #41C4AB;
+}
+
+.aqua-bg {
+    background: #38E6D8;
+}
+
+.blue-bg {
+    background: #0A8FD5;
+}
+
+.purple-bg {
+    background: #AC5AFF;
+}
+
+.pink-bg {
+    background: #F62459;
+}
+
+.tan-bg {
+    background: #C2B49A;
+}
+
+@media(max-width:480px) {
+    #style-switcher {
+        top: 30px;
+    }
+}		
+    </style>		
+		
+		
+		<!-- Style Switcher - FOR DEMO PURPOSES ONLY -->
+    <div id="style-switcher" class="close-style-switcher">
+        <!--Panel Button -->
+        <a class="panel-button"><i class="fa fa-gear"></i></a>
+        <!-- Colors -->
+        <div class="segment">
+            <h4>Выберите цвет</h4>
+            <a title="red" class="switcher red-bg"></a>
+            <a title="orange" class="switcher orange-bg"></a>
+            <a title="yellow" class="switcher yellow-bg"></a>
+            <a title="green" class="switcher green-bg"></a>
+            <a title="turquoise" class="switcher turquoise-bg"></a>
+            <a title="aqua" class="switcher aqua-bg"></a>
+            <a title="blue" class="switcher blue-bg"></a>
+            <a title="purple" class="switcher purple-bg"></a>
+            <a title="pink" class="switcher pink-bg"></a>
+            <a title="tan" class="switcher tan-bg"></a>
+        </div>
+    </div>
+    <script>
+	// Style Switcher Open/Close
+$('#style-switcher .panel-button').click(function() {
+    //$('#style-switcher').toggleClass('close-style-switcher', 'open-style-switcher', 1000);
+    $('#style-switcher').toggleClass('open-style-switcher', 'close-style-switcher', 1000);
+    return false;
 });
-//-->
-</script>
-</head>
-<body>
-<form method="post" action="" id="formToSave">
-    <dl>
-        <dt>Name:</dt>
-        <dd><input type="text" id="nameField" value="Sample" /></dd>
-        <dt>Last Name:</dt>
-        <dd><input type="text" id="lastNameField" value="Last Name" /></dd>
-        <dt>Gender:</dt>
-        <dd><input type="radio" checked="checked" name="gender" value="M" id="genderMale" />
-            Male
-            <input type="radio" checked="checked" name="gender" value="F" />
-            Female
-    </dl>
-    <p><a href="javascript://Save as TXT" id="submitLink">Save as TXT</a></p>
-    <p><button type="submit"><img src="http://www.suttonrunners.org/images/save_icon.gif" alt=""/> Save as TXT</button></p>
-</form>
-</body>
-</html>
+
+// Color Skins
+$('.switcher').click(function() {
+    var title = jQuery(this).attr('title');
+    jQuery('#changeable-colors').attr('href', 'css/css/' + title + '.css');
+    return false;
+});
+
+	</script>
+		
+
+</body></html>
